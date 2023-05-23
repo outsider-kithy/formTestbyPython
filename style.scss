@@ -1,0 +1,152 @@
+//リセット
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  outline: none;
+}
+
+select {
+  border: none;
+  outline: none;
+}
+
+//スタイル
+body{
+    background-color: #e2e2e2;
+}
+
+main{
+    max-width: 940px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    @media screen and (max-width:940px) {
+        width: 90%;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    @media screen and (max-width:740px) {
+        font-size: 1.4rem;
+    }
+}
+
+table{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    tbody{
+        display: block;
+        width: 100%;
+        tr{
+            width: 100%;
+            padding: 0;
+            margin-bottom: 5px;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: nowrap;
+            justify-content: stretch;
+            border-bottom: 1px solid #e2e2e2;
+            @media screen and (max-width:740px){
+                flex-wrap: wrap;
+            }
+            th{
+                display: block;
+                width: 30%;
+                padding: 10px;
+                background-color: #e2e2e2;
+                text-align: left;
+                @media screen and (max-width:740px){
+                    width: 100%;
+                }
+            }
+            td{
+                display: block;
+                width: 70%;
+                padding: 10px;
+                @media screen and (max-width:740px){
+                    width: 100%;
+                    padding: 10px 0px;
+                }
+                &.w4{
+                    width: 23%;
+                    @media screen and (max-width:740px) {
+                        width: 40%;
+                    }
+                }
+                &.w3{
+                    width: 23%;
+                    @media screen and (max-width:740px){
+                        width: 30%;
+                    }
+                    select{
+                        width: 100%;
+                    }
+                    input[type=text]{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+input[type=text],
+input[type=postal-code],
+input[type=email],
+input[type=tel]{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    @media screen and (max-width:940px) {
+        width: 100%;
+    }
+}
+
+select{
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+}
+
+input[type=submit]{
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #1a9ac1;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 2.0rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    transition: 0.3s;
+    &:hover{
+        transform: translateY(5px);
+        box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    }
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+}
